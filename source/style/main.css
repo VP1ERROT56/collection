@@ -1,0 +1,159 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0 auto;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Open Sans", sans-serif;
+}
+
+/*ferst screen*/
+
+.header {}
+
+.container {}
+
+.nav__panel {
+  display: flex;
+  flex-direction: row;
+  height: 60px;
+  background-color: #1f2d30;
+  padding: 0 165px;
+  justify-content: space-between;
+}
+
+.logo__navbar {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  align-items: center;
+  max-width: 702px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logo {
+  margin: 0;
+}
+
+.nav__list {
+  margin: 0;
+  max-width: 512px;
+  width: 100%;
+}
+
+.list {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.item {
+  list-style: none;
+  margin: 0;
+}
+
+.item__link:hover{
+color: 	#bae249;
+}
+
+.item__link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.search__login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  max-width: 112px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.search {
+  margin: 0;
+}
+
+.open {
+}
+
+.search__button {
+  border: none;
+  background-color: #1f2d30;
+  height: 24px;
+  width: 24px;
+  padding: 0;
+  cursor: pointer;
+}
+.Form__search {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  display: none;
+}
+.pole__vvoda {
+  border: none;
+  border-radius: 25px;
+  background-color: #bae249;
+  width: 112px;
+  margin: 0;
+  height: 21.6px;
+  text-align: center;
+  color: #1f2d30;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.btn__search {
+  border: none;
+  border-radius: 25px;
+  background-color: #bae249;
+  margin: 0;
+    color: #1f2d30;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  
+}
+
+
+.login {
+  margin: 0;
+}
+
+.login__button {
+  border: none;
+  background-color: #1f2d30;
+  height: 24px;
+  width: 24px;
+  padding: 0;
+  cursor: pointer;
+}
+
+
+/*media*/
+@media (max-width: 1441px) {
+.search__login.open{
+  max-width: 200px;
+  width: 100%;
+  .search{width: 100%;}
+  .Form__search{display: flex;}
+  .search__button{display: none;}
+  .login__button{display: none;}
+}
+}
