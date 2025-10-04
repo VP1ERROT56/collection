@@ -12,6 +12,18 @@
 </head>
 
 <body>
+  <!--login window-->
+      <div class="window__login">
+        <div class="modal__login">
+          <form class="login__form" >
+            <input class="input__login holder" type="email" placeholder="Логин" aria-label="Логин">
+            <input class="input__password holder" type="password" placeholder="Пароль" aria-label="Пароль">
+            <button class="btn__login" type="submit">Войти</button>
+          </form>
+          <a href="#" class="registration">Регистрация</a>
+        </div>
+  </div>
+
   <!--ferst page-->
   <header class="header">
     <div class="container">
@@ -45,26 +57,23 @@
             </ul>
           </div>
         </div>
-        <div class="search__login open">
+        <div class="search__login">
           <div class="search ">
             <button class="search__button" id="search__button">
-              <img src="source/img/search.svg" alt="search">
+              <img src="/source/img/search.svg" alt="search">
             </button>
             <form class="Form__search" role="search">
-              <input class="pole__vvoda" type="search" placeholder="Поиск" aria-label="Поиск" />
+              <input class="pole__vvoda" type="search" placeholder="Поиск" aria-label="Поиск">
               <button class="btn__search" type="submit">Поиск</button>
             </form>
           </div>
           <div class="login">
-            <button class="login__button">
-              <img src="source/img/login.svg" alt="login">
+            <button class="login__button" id="loginModal">
+              <img src="/source/img/login.svg" alt="login">
             </button>
           </div>
         </div>
-      </nav>
-      <main class="main">
-
-      </main>
+    </nav>
     </div>
 
   </header>

@@ -16,6 +16,11 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.keyboard-focus {
+    border: 2px solid #bae249 !important;
+    outline: none !important;
+}
+
 /*ferst screen*/
 
 .header {}
@@ -63,8 +68,8 @@ body {
   margin: 0;
 }
 
-.item__link:hover{
-color: 	#bae249;
+.item__link:hover {
+  color: #bae249;
 }
 
 .item__link {
@@ -87,10 +92,11 @@ color: 	#bae249;
 
 .search {
   margin: 0;
+  width: 24px;
+  height: 24px;
 }
 
-.open {
-}
+.open {}
 
 .search__button {
   border: none;
@@ -100,16 +106,18 @@ color: 	#bae249;
   padding: 0;
   cursor: pointer;
 }
+
 .Form__search {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   display: none;
 }
+
 .pole__vvoda {
   border: none;
-  border-radius: 25px;
-  background-color: #bae249;
+  border-radius: 8px;
+  background-color: #ffffff;
   width: 112px;
   margin: 0;
   height: 21.6px;
@@ -119,21 +127,24 @@ color: 	#bae249;
   font-weight: 400;
   line-height: 22px;
 }
+
 .btn__search {
   border: none;
-  border-radius: 25px;
+  border-radius: 8px;
   background-color: #bae249;
   margin: 0;
-    color: #1f2d30;
+  color: #1f2d30;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  
+
 }
 
 
 .login {
   margin: 0;
+  width: 24px;
+  height: 24px;
 }
 
 .login__button {
@@ -145,15 +156,99 @@ color: 	#bae249;
   cursor: pointer;
 }
 
+/*login modal window*/
+
+.window__login {
+  display: none;
+ position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px; /* строгая ширина */
+    height: 310px; /* строгая высота */
+    z-index: 1000;
+    backdrop-filter: blur(2px);
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    background-color: #1d2f30;
+    /* Запрещаем изменение размеров */
+    resize: none;
+    overflow: hidden; /* или auto/scroll если нужен скролл */
+}
+.modal__login {
+text-align: center;
+}
+.login__form {
+  display: flex;
+flex-direction: column;
+gap: 35px;
+margin-bottom: 25px;
+}
+.input__login {
+}
+.holder{
+  width: 350px;
+  height: 45px;
+  border: none;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 16px;
+}
+.input__password {
+}
+.btn__login {
+  width: 145px;
+  height: 45px;
+  border-radius: 8px;
+  border: none;
+  background-color: #bae249;
+  cursor: pointer;
+  color: 	#0b1919;
+font-family: Open, sans-serif;
+font-size: 16px;
+font-weight: 700;
+line-height: 100%;
+}
+.registration {
+  color: 	#ffffff;
+font-family: Open, sans-serif;
+font-size: 16px;
+font-weight: 700;
+line-height: 100%;
+text-decoration: none;
+}
+.registration:hover{
+  color: #bae249;
+}
+
+
+
 
 /*media*/
-@media (max-width: 1441px) {
-.search__login.open{
-  max-width: 200px;
-  width: 100%;
-  .search{width: 100%;}
-  .Form__search{display: flex;}
-  .search__button{display: none;}
-  .login__button{display: none;}
-}
+@media (max-width: 2500px) {
+  .search__login.open {
+    max-width: 200px;
+    width: 100%;
+
+    .search {
+      width: 100%;
+    }
+
+    .Form__search {
+      display: flex;
+    }
+
+    .search__button {
+      display: none;
+    }
+
+    .login__button {
+      display: none;
+    }
+  }
+
+  .window__login.active{
+    display: flex;
+  }
 }
