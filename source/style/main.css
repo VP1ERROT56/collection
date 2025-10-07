@@ -22,18 +22,25 @@ body {
 }
 
 /*ferst screen*/
-
+.nav__sm{
+  background-color: #1f2d30 ;
+}
 .header {}
 
-.container {}
+.container {
+  
+}
 
 .nav__panel {
   display: flex;
   flex-direction: row;
   height: 60px;
   background-color: #1f2d30;
-  padding: 0 165px;
   justify-content: space-between;
+}
+
+.pading{
+  padding: 0 165px;
 }
 
 .logo__navbar {
@@ -243,12 +250,39 @@ text-decoration: none;
       display: none;
     }
 
-    .login__button {
+    .login {
       display: none;
     }
   }
 
   .window__login.active{
     display: flex;
+  }
+}
+
+@media (max-width: 1281px) {
+  .pading{
+    padding: 0 80px;
+  }
+
+  .logo__navbar{
+    max-width: 550px;
+  }
+
+
+  .nav__list{
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 1281px) {
+  .pading{
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav__list{
+    display: none;
   }
 }
