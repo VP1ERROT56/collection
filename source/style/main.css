@@ -24,6 +24,7 @@ body {
 /*ferst screen*/
 .nav__sm{
   background-color: #1f2d30 ;
+  display: none;
 }
 .header {}
 
